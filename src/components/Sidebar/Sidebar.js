@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   const navItems = [
     { label: "Dashboard", active: true },
     { label: "Consultas", active: false },
@@ -11,7 +11,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="dashboard-sidebar">
+    <aside className={`dashboard-sidebar ${isOpen ? "open" : ""}`}>
       <nav className="sidebar-nav">
         {navItems.map((item, index) => (
           <a

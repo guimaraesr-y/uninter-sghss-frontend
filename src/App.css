@@ -13,15 +13,15 @@
 /* Layout Styles */
 .dashboard-layout {
   display: flex;
-  margin-top: 74px;
   min-height: calc(100vh - 74px);
 }
 
 /* Main Content Styles */
 .main-content {
   flex: 1;
-  margin-left: 192px;
-  margin-right: 271px;
+  margin-left: 12vw;
+  margin-right: 30vw;
+  width: calc(100% - 32vw);
   padding: 21px 23px;
   display: flex;
   flex-direction: column;
@@ -65,34 +65,16 @@
     flex-direction: column;
   }
 
-  .dashboard-sidebar {
-    width: 100%;
-    height: auto;
-    position: static;
-    border-radius: 0;
-    padding: 20px;
-  }
-
-  .sidebar-nav {
-    flex-direction: row;
-    overflow-x: auto;
-    gap: 10px;
-  }
-
-  .nav-link {
-    white-space: nowrap;
-    min-width: 120px;
-  }
-
   .main-content {
     margin-left: 0;
     margin-right: 0;
+    width: unset;
     padding: 15px;
   }
 
   .right-sidebar {
     width: 100%;
-    position: static;
+    position: relative;
     height: auto;
     padding: 15px;
   }

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -8,11 +9,17 @@ import Calendar from "./components/Calendar/Calendar";
 import Notifications from "./components/Notifications/Notifications";
 
 function App() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div className="dashboard-app">
-      <Header />
+      <Header toggleSidebar={toggleSidebar} />
       <div className="dashboard-layout">
-        <Sidebar />
+        <Sidebar isOpen={isSidebarOpen} />
         <main className="main-content">
           <DailySummary />
           <ProfessionalSchedule />
