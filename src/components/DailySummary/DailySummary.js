@@ -1,5 +1,5 @@
-import "./DailySummary.css";
 import StatCard from "../StatCard/StatCard";
+import "./DailySummary.css";
 
 const DailySummary = () => {
   const patientIcon = (
