@@ -19,10 +19,9 @@
 
 /* Main Content Styles */
 .main-content {
-  flex: 1;
   margin-left: 12vw;
-  margin-right: 30vw;
-  width: calc(100% - 32vw);
+  width: calc(100vw - 12vw - 22vw);
+  margin-top: inherit;
   padding: 0 2vw;
   display: flex;
   flex-direction: column;
@@ -31,14 +30,13 @@
 
 /* Right Sidebar Styles */
 .right-sidebar {
-  width: 20vw;
-  padding: 2vh 1vw;
+  width: 18vw;
+  padding: 0vh 1vw;
   display: flex;
   flex-direction: column;
   gap: 3vh;
   position: fixed;
   right: 0;
-  height: calc(100vh - 10vh);
   overflow-y: auto;
 }
 
@@ -52,13 +50,7 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .right-sidebar {
-    width: 25vw;
-  }
-
-  .main-content {
-    margin-right: 25vw;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -74,7 +66,7 @@
   }
 
   .right-sidebar {
-    width: 100%;
+    width: unset;
     position: relative;
     height: auto;
     padding: 2vh 2vw;
