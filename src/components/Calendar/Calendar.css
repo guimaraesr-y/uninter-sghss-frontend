@@ -1,0 +1,79 @@
+/* Calendar Widget Styles */
+.calendar-widget {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  padding: 21px 0 28px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+  margin-bottom: 22px;
+}
+
+.calendar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 0;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.calendar-grid {
+  padding: 0 22px;
+}
+
+.weekday-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.weekday {
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  width: 30px;
+  text-align: center;
+}
+
+.calendar-week {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.calendar-day {
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding: 2px 0;
+  border-radius: 4px;
+}
+
+.calendar-day:hover {
+  background: #f0f0f0;
+}
+
+.calendar-day.next-month {
+  color: #aeaeae;
+}

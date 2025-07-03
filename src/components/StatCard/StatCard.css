@@ -1,0 +1,35 @@
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6.6px 1px rgba(0, 0, 0, 0.11);
+  min-width: 168px;
+  flex: 1;
+}
+
+.stat-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}

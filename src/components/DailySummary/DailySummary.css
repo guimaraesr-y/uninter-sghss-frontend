@@ -1,0 +1,13 @@
+/* Daily Summary Styles */
+.daily-summary {
+  background: #fff;
+  padding: 21px 23px;
+  border-radius: 15px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
