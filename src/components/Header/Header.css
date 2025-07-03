@@ -2,7 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 29px;
+  padding: 0 2vw;
+  height: 10vh;
+  background: #fff;
+  border-bottom: 1px solid #d7d7d7;
+  box-shadow: 0px 0px 8.4px 4px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 .header-left {
@@ -10,11 +18,35 @@
   align-items: center;
 }
 
+.header-logo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
 .header-user {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1vw;
   border-radius: 10px;
+}
+
+.user-icon {
+  width: 3vw;
+  height: 3vw;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #565656;
+}
+
+.dropdown-icon {
+  width: 2vw;
+  height: 2vw;
+  cursor: pointer;
 }
 
 .sidebar-toggle {
@@ -28,6 +60,6 @@
 @media (max-width: 768px) {
   .sidebar-toggle {
     display: block;
-    margin-right: 15px;
+    margin-right: 2vw;
   }
 }
