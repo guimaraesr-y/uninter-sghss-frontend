@@ -1,13 +1,13 @@
 /* Daily Summary Styles */
 .daily-summary {
   background: #fff;
-  padding: 21px 23px;
+  padding: 3vh 2vw;
   border-radius: 15px;
 }
 
 .stats-grid {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
+  gap: 1vw;
   flex-wrap: wrap;
 }
