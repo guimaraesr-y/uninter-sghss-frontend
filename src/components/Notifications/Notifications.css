@@ -3,27 +3,27 @@
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
-  padding: 21px 22px;
+  padding: 3vh 2vw;
 }
 
 .notifications-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #000;
-  margin: 0 0 22px 0;
+  margin: 0 0 3vh 0;
 }
 
 .notifications-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vh;
 }
 
 .notification-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 9px 15px;
+  gap: 1vw;
+  padding: 1vh 1.5vw;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 6.6px 1px rgba(0, 0, 0, 0.11);
@@ -36,7 +36,7 @@
 }
 
 .notification-text {
-  font-size: 10px;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #000;
   flex: 1;
