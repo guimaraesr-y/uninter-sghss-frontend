@@ -1,0 +1,48 @@
+/* Future Appointments Styles */
+.future-appointments {
+  background: #fff;
+  padding: 21px 23px;
+  border-radius: 15px;
+}
+
+.appointments-table {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
+}
+
+.table-header {
+  display: flex;
+  padding: 6px 17px;
+  gap: 58px;
+  margin-bottom: 10px;
+}
+
+.header-cell {
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  min-width: 100px;
+}
+
+.header-cell:last-child {
+  flex: 1;
+}
+
+.table-row {
+  display: flex;
+  padding: 5px 17px;
+  gap: 18px;
+}
+
+.table-cell {
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  min-width: 140px;
+}
+
+.table-cell:last-child {
+  flex: 1;
+}

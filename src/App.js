@@ -1,12 +1,11 @@
-import React from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import DailySummary from "./components/DailySummary";
-import ProfessionalSchedule from "./components/ProfessionalSchedule";
-import FutureAppointments from "./components/FutureAppointments";
-import Calendar from "./components/Calendar";
-import Notifications from "./components/Notifications";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import DailySummary from "./components/DailySummary/DailySummary";
+import ProfessionalSchedule from "./components/ProfessionalSchedule/ProfessionalSchedule";
+import FutureAppointments from "./components/FutureAppointments/FutureAppointments";
+import Calendar from "./components/Calendar/Calendar";
+import Notifications from "./components/Notifications/Notifications";
 
 function App() {
   return (

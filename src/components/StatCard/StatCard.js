@@ -1,4 +1,5 @@
 import React from "react";
+import "./StatCard.css";
 
 const StatCard = ({ number, label, icon }) => {
   return (

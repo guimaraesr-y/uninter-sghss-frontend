@@ -1,5 +1,5 @@
-import React from "react";
-import StatCard from "./StatCard";
+import "./DailySummary.css";
+import StatCard from "../StatCard/StatCard";
 
 const DailySummary = () => {
   const patientIcon = (

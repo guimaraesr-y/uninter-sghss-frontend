@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProfessionalSchedule.css";
 
 const ProfessionalSchedule = () => {
   const timeSlots = ["9h", "10h", "11h", "12h", "13h", "14h"];

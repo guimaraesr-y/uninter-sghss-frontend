@@ -1,4 +1,5 @@
 import React from "react";
+import "./FutureAppointments.css";
 
 const FutureAppointments = () => {
   const appointments = [
