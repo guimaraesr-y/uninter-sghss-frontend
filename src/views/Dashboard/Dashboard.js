@@ -16,8 +16,10 @@ const Dashboard = () => {
         <FutureAppointments />
       </main>
       <aside className="right-sidebar">
-        <Calendar />
-        <Notifications />
+        <div className="floating-sidebar">
+          <Calendar />
+          <Notifications />
+        </div>
       </aside>
     </Layout>
   );
