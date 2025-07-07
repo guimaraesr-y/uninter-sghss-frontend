@@ -1,70 +1,64 @@
-import React from "react";
-import "./ProfessionalSchedule.css";
+import React from 'react';
+import { ScheduleRow } from './ScheduleRow';
+import './ProfessionalSchedule.css';
+
+const hours = Array.from({ length: 12 }, (_, i) => `${i + 8}h`); // 8h to 19h
 
 const ProfessionalSchedule = () => {
-  const timeSlots = ["9h", "10h", "11h", "12h", "13h", "14h"];
-
-  const professionals = [
+  const data = [
     {
-      name: "João",
-      appointments: [
-        { type: "Check-up", slot: 0 },
-        { type: "occupied", slot: 1 },
-        { type: "occupied", slot: 2 },
-        { type: "Check-up", slot: 3 },
-        { type: "Check-up", slot: 4 },
+      name: 'João',
+      schedule: [
+        { hour: '8h' },
+        { hour: '9h', content: 'Check-up' },
+        { hour: '10h', busy: true },
+        { hour: '11h', busy: true },
+        { hour: '12h', content: 'Check-up' },
+        { hour: '13h', content: 'Check-up' },
+        { hour: '14h', content: 'Check-up' },
+        { hour: '15h' },
+        { hour: '16h' },
+        { hour: '17h' },
+        { hour: '18h' },
+        { hour: '19h' },
       ],
     },
     {
-      name: "Julio",
-      appointments: [
-        { type: "Extração", slot: 0 },
-        { type: "Exame de Sangue", slot: 1 },
-        { type: "Check-up", slot: 2 },
-        { type: "Check-up", slot: 3 },
-        { type: "Check-up", slot: 4 },
+      name: 'Julio',
+      schedule: [
+        { hour: '8h' },
+        { hour: '9h', content: 'Extração' },
+        { hour: '10h', content: 'Exame de Sangue' },
+        { hour: '11h', content: 'Check-up' },
+        { hour: '12h', content: 'Check-up' },
+        { hour: '13h', content: 'Check-up' },
+        { hour: '14h', content: 'Check-up' },
+        { hour: '15h' },
+        { hour: '16h' },
+        { hour: '17h' },
+        { hour: '18h' },
+        { hour: '19h' },
       ],
     },
   ];
 
   return (
-    <section className="professional-schedule">
-      <h2 className="section-title">Agenda de Profissionais</h2>
-      <div className="schedule-container">
-        <div className="time-header">
-          {timeSlots.map((time, index) => (
-            <div key={index} className="time-slot-header">
-              {time}
-            </div>
+    <div className="agenda-container">
+      <h1 className="agenda-title">Agenda de Profissionais</h1>
+      <div className="agenda-scroll-wrapper">
+        <div className="agenda-table">
+          <div className="agenda-header">
+            <div className="row-name"></div>
+            {hours.map((hour) => (
+              <div key={hour} className="header-hour">{hour}</div>
+            ))}
+          </div>
+          {data.map((row, index) => (
+            <ScheduleRow key={index} {...row} />
           ))}
         </div>
-
-        {professionals.map((professional, profIndex) => (
-          <div key={profIndex} className="professional-row">
-            <div className="professional-name">{professional.name}</div>
-            <div className="appointments-row">
-              {timeSlots.map((_, timeIndex) => {
-                const appointment = professional.appointments.find(
-                  (apt) => apt.slot === timeIndex,
-                );
-                return (
-                  <div
-                    key={timeIndex}
-                    className={`appointment-slot ${appointment?.type === "occupied" ? "occupied" : "available"}`}
-                  >
-                    {appointment && appointment.type !== "occupied" && (
-                      <span className="appointment-text">
-                        {appointment.type}
-                      </span>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

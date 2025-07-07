@@ -1,69 +1,81 @@
-/* Professional Schedule Styles */
-.professional-schedule {
+/* Agenda.css */
+.agenda-container {
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+.agenda-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.agenda-table {
   background: #fff;
-  padding: 3vh 2vw;
-  border-radius: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  overflow-x: auto;
 }
 
-.schedule-container {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  padding: 2vh 0;
-}
-
-.time-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vh 4vw;
-  margin-bottom: 2vh;
-}
-
-.time-slot-header {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #000;
-}
-
-.professional-row {
+.agenda-header {
   display: flex;
   align-items: center;
-  padding: 1vh 2vw;
-  gap: 2vw;
+  margin-bottom: 8px;
 }
 
-.professional-name {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #000;
-  min-width: 5vw;
+.header-spacer {
+  width: 80px;
+  flex-shrink: 0;
 }
 
-.appointments-row {
+.header-hours {
   display: flex;
-  gap: 1.5vw;
-  flex: 1;
 }
 
-.appointment-slot {
-  width: 7vw;
-  height: 2.25vh;
-  padding: 0.5vh 1.2vw;
+.header-hour {
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 4px;
+  font-size: 14px;
+}
+
+.schedule-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.row-name {
+  width: 80px;
+  text-align: right;
+  padding-right: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.row-slots {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slot {
+  min-width: 100px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
-  box-shadow: 0px 0px 3.9px 0px rgba(0, 0, 0, 0.25);
-  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 4px;
+  background-color: white;
+  color: black;
 }
 
-.appointment-slot.occupied {
-  background: #ff8989;
-}
-
-.appointment-text {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: #000;
-  text-align: center;
+.slot-busy {
+  background-color: #f88;
+  color: white;
 }
