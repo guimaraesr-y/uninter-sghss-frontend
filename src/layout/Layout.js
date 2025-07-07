@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Sidebar from "../components/Sidebar/Sidebar";
 import "./Layout.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, onNavigate }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     <div className="dashboard-app">
       <Header toggleSidebar={toggleSidebar} />
       <div className="dashboard-layout">
-        <Sidebar isOpen={isSidebarOpen} />
+        <Sidebar isOpen={isSidebarOpen} onNavigate={onNavigate} />
         {children}
       </div>
     </div>

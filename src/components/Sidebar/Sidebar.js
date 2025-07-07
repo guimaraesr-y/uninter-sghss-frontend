@@ -1,13 +1,13 @@
 import React from "react";
 import "./Sidebar.css";
 
-const Sidebar = ({ isOpen }) => {
+const Sidebar = ({ isOpen, onNavigate }) => {
   const navItems = [
-    { label: "Dashboard", active: true },
-    { label: "Consultas", active: false },
-    { label: "Pacientes", active: false },
-    { label: "Leitos", active: false },
-    { label: "Recursos", active: false },
+    { key: "dashboard", label: "Dashboard", active: true },
+    { key: "consultas", label: "Consultas", active: false },
+    { key: "pacientes", label: "Pacientes", active: false },
+    { key: "leitos", label: "Leitos", active: false },
+    { key: "recursos", label: "Recursos", active: false },
   ];
 
   return (
@@ -18,6 +18,7 @@ const Sidebar = ({ isOpen }) => {
             key={index}
             href="#"
             className={`nav-link ${item.active ? "active" : ""}`}
+            onClick={() => onNavigate(item.key)}
           >
             <svg
               className="nav-icon"
