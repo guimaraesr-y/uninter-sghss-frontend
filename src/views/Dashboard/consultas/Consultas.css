@@ -130,6 +130,7 @@
   font-size: 16px;
 }
 
+/* Gráfico temporal: uma barra lateral colorida */
 .consultation-item::before {
   content: '';
   position: absolute;
@@ -139,6 +140,87 @@
   width: 4px;
   border-radius: 2px;
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-color-hover) 100%);
+}
+
+/* Formulário moderninho */
+.form-container {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.form-container h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-columns {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+.column-left,
+.column-right {
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+.btn-submit {
+  padding: 12px 32px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-submit:hover {
+  background: var(--primary-color-hover);
+}
+.btn-cancel {
+  padding: 12px 32px;
+  background: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-cancel:hover {
+  background: #f5f5f5;
 }
 
 @media (max-width: 768px) {
