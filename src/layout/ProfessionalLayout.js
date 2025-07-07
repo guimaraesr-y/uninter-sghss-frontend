@@ -10,7 +10,7 @@ const ProfessionalLayout = ({ children, onNavigate }) => {
   };
 
   return (
-    <div className="dashboard-app">
+    <div className="dashboard-app professional-container">
       <Header toggleSidebar={toggleSidebar} />
       <div className="dashboard-layout">
         {children}
