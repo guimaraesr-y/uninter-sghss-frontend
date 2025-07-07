@@ -1,6 +1,6 @@
 /* Daily Summary Styles */
 .daily-summary {
-  background: #fff;
+  background: var(--white-color);
   padding: 3vh 2vw;
   border-radius: 15px;
 }
