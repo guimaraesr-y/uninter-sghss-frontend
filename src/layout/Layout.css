@@ -1,0 +1,11 @@
+.dashboard-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dashboard-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
