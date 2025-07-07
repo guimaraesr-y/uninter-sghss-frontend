@@ -4,8 +4,9 @@ import ProfessionalSchedule from "../../components/ProfessionalSchedule/Professi
 import FutureAppointments from "../../components/FutureAppointments/FutureAppointments";
 import Calendar from "../../components/Calendar/Calendar";
 import Notifications from "../../components/Notifications/Notifications";
-import "./Dashboard.css";
 import Layout from "../../layout/Layout";
+
+import "./Dashboard.css";
 
 const Dashboard = () => {
   return (

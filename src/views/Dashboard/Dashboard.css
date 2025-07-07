@@ -75,11 +75,17 @@
     padding: 2vh 2vw;
   }
 
+  /* TODO: fix this goddamn bug */
   .right-sidebar {
     width: unset;
-    position: relative;
-    height: auto;
+    height: 100%; 
     padding: 2vh 2vw;
+  }
+
+  .floating-sidebar {
+    position: relative;
+    height: 100%;
+    /* padding: 2vh 2vw; */
   }
 
   .stats-grid {
